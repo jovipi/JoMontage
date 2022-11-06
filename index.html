@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Pour s'adapter au smartphone-->
+    <title>Accueil</title>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/15359b2697.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loader_rotate "></div>
+    </div>
+        <header class="header">
+            <div class="container">
+            <!--Le corps de Header-->
+                    <div class="logo_presentation">
+                         <img class="logo_jomontage" src="sass/Base/JoMontagepng.png" alt="logo jo montage">
+                    </div>
+                    <div class="title_main">
+                <!--l'entête du corps-->
+                        <h1 class="titre_page_accueil">Jo Montage</h1>
+                            <p class="sous_titre">Pour tous vos évènements, Création sur mesure de vos vidéos</p>
+                    </div>
+            
+                    <!--Filtres-->
+                    <div class="filtres_bloc">
+                    <!--Bouton Economique-->
+                        <label>
+                            <span class="button_explore">Explorer mes montages</span>
+                        </label>
+                        <input type="search" hidden name="button_filtre" id="explorer" />         
+                    </div>
+            </div> 
+        </header>
+        <section id="section_fonctionnement">
+            <!--Titre Bloc-->
+            <div class="titre_fonctionnement">
+                    <h2>Mes Formules</h2>
+            </div>
+            <div class="bloc_filtres">
+                    <form class="button_filters" method="POST" action="traitement.php">
+                <!--Bouton Choisir Restaurants-->
+                        <label>
+                            <a href="standard.html">
+                            <span class="circle-icon">1</span>
+                            <span class="checkbox_filtres"><i class="icone_filtres fas fa-mobile-alt"></i><span class="nom_filtres">Standard</span></span>
+                            </a>
+                        </label>
+                            <input type="checkbox" hidden name="button_filtre" id="choix_restos" />
+             <!--Bouton Composez votre menu-->
+                        <label>
+                            <a href="prenium.html">
+                            <span class="circle-icon">2</span>
+                            <span class="checkbox_filtres"><i class="icone_filtres fas fa-list-ul"></i><span class="nom_filtres">Prenium</span></span>
+                            </a>
+                        </label>
+                            <input type="checkbox" hidden name="button_filtre" id="compo_menu" />
+             <!--Bouton Dégustez au restaurant-->
+                        <label>
+                            <a href="formulevhs.html">
+                            <span class="circle-icon">3</span>
+                            <span class="checkbox_filtres"><i class="icone_filtres fas fa-store"></i><span class="nom_filtres">Formule VHS</span></span>
+                            </a>
+                        </label>
+                            <input type="checkbox" hidden name="button_filtre" id="dégust_resto" />
+                    </form>
+            </div>
+        </section>
+        <div class="container_desktop">
+            <section id="section_restaurants">
+                <div class="titre_bloc">
+                    <!--Titre de la Section-->
+                        <h2>Mes Montages </h2>
+                </div>
+                <!--Bloc Section-->
+                <div class="bloc_photo">
+                    <div class="bloc_pour_coeur">
+                        <a href="mariage.html" class="etablissement">     
+                            <span class="cadre_etablissement">
+                                <img src="images/mariage.jpg" alt="Photo Mariage">
+                                <span class="titre_h3">Mariage</span>
+                                <span class="texte_p">Montage sur demande </span>           
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bloc_photo">
+                    <div class="bloc_pour_coeur">
+                        <a href="anniversaire.html" class="etablissement">
+                            <span class="cadre_etablissement">
+                                <img src="images/anniversaire.jpg" alt="anniversaire">
+                                <span class="titre_h3">Anniversaire</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bloc_photo">
+                    <div class="bloc_pour_coeur">
+                        <a href="souvenirs.html" class="etablissement">
+                            <span class="cadre_etablissement">
+                                <img src="images/camera-g63602a015_1920.jpg" alt="souvenir">
+                                <span class="titre_h3">Vos Souvenirs</span>
+                                <span class="texte_p">Récupération de VHS</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bloc_photo">
+                    <div class="bloc_pour_coeur">
+                        <a href="promotionvideos.html" class="etablissement">
+                            <span class="cadre_etablissement">
+                                <img src="images/video-gbde16462f_1920.jpg" alt="video pro">
+                                <span class="titre_h3">Tous type de vidéos</span>
+                                <span class="texte_p">Promo de produits ou services</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>  
+            </section>
+        </div> 
+        <!--Footer-->
+        <footer>
+            <div class="bloc_footer">
+                <div class="logo_footer">
+                        <img class="logo_mini_footer" src="sass/Base/JoMontagepng.png" alt="logo_mini_footer">
+                </div>
+                <nav>
+                    <ul>
+                        <li>       
+                            <a href="">Mon identité</a>
+                        </li>
+                        <li>             
+                            <a href="">Demander un devis</a>
+                        </li>
+                        <li>
+                            <a href="">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="mailto:joannapineri@gmail.com">Contact</a>
+                        </li>
+                    </ul>
+                </nav>   
+            </div>
+        </footer>
+</body>
+
+</html>
